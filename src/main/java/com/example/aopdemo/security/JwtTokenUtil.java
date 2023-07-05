@@ -1,4 +1,4 @@
-package com.example.aopdemo.config;
+package com.example.aopdemo.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -1,12 +1,8 @@
 package com.example.aopdemo.controllers;
 
-import com.example.aopdemo.config.JwtUserDetailsService;
 import com.example.aopdemo.model.UserDTO;
 import com.example.aopdemo.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 

@@ -5,7 +5,7 @@ request body:
 {
     "firstName":"jatin",
     "lastName":"garala",
-    "email":"jatingarala@gmail.com",
+    "email":"jatin@gmail.com",
     "username":"jatin",
     "password":"jatin123"
 }

@@ -22,20 +22,21 @@ public class RegisterService  {
     public void register(UserDTO user)  {
 
         //Let's check if user already registered with us
-//        if(checkIfUserExist(user.getEmail())){
-//            System.out.println("User already exists for this email");
-//        }
-        UserEntity userEntity = new UserEntity();
-        BeanUtils.copyProperties(user, userEntity);
-        encodePassword(userEntity, user);
-        userRepository.save(userEntity);
+        if(checkIfUserExist(user.getUsername())!=null){
+            System.out.println("User already exists for this email");
+        }else {
+            UserEntity userEntity = new UserEntity();
+            BeanUtils.copyProperties(user, userEntity);
+            encodePassword(userEntity, user);
+            userRepository.save(userEntity);
+        }
     }
 
 
 
-//    public boolean checkIfUserExist(String email) {
-//        return userRepository.findByEmail(email);
-//    }
+    public UserEntity checkIfUserExist(String username) {
+        return userRepository.findByUsername(username);
+    }
 
     private void encodePassword( UserEntity userEntity, UserDTO user){
         userEntity.setPassword(passwordEncoder.encode(user.getPassword()));

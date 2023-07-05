@@ -1,7 +1,7 @@
 package com.example.aopdemo.controllers;
 
-import com.example.aopdemo.config.JwtTokenUtil;
-import com.example.aopdemo.config.JwtUserDetailsService;
+import com.example.aopdemo.security.JwtTokenUtil;
+import com.example.aopdemo.security.JwtUserDetailsService;
 import com.example.aopdemo.model.JwtRequest;
 import com.example.aopdemo.model.JwtResponse;
 import org.springframework.beans.factory.annotation.Autowired;

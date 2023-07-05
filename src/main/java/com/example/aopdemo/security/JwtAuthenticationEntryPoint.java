@@ -1,4 +1,4 @@
-package com.example.aopdemo.config;
+package com.example.aopdemo.security;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
