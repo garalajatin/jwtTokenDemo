@@ -1,3 +1,5 @@
+==REGISTER==
+
 POST- http://localhost:8080/register
 request body:
 {
@@ -12,12 +14,13 @@ response:
 success
 
 
+==LOGIN===
 
 POST- http://localhost:8080/authenticate
 request param:
 {
-    "username":"root",
-    "password":"root"
+    "username":"jatin",
+    "password":"jatin123"
 }
 
 response:
