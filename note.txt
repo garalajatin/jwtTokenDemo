@@ -1,0 +1,37 @@
+POST- http://localhost:8080/register
+request body:
+{
+    "firstName":"jatin",
+    "lastName":"garala",
+    "email":"jatingarala@gmail.com",
+    "username":"jatin",
+    "password":"jatin123"
+}
+
+response:
+success
+
+
+
+POST- http://localhost:8080/authenticate
+request param:
+{
+    "username":"root",
+    "password":"root"
+}
+
+response:
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiZXhwIjoxNjg4NTY2OTY2LCJpYXQiOjE2ODg1NDg5NjZ9.JL05_YS6SRBp8C1RwDlssO7XgLRpoG6zUmgVQJqiuSnMTVGRIdaEoAIX-jxoDjM3EFWLmycjRxv_DJHYIsDa6w"
+}
+
+GET- http://localhost:8080/hello
+
+request: blank
+Header
+Authorization   = Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiZXhwIjoxNjg4NTY1NzYzLCJpYXQiOjE2ODg1NDc3NjN9.Asr_5XLyKKZdcgpVmHa36ysuKXEZBIhx3k-LoHtX63YSgfnKy8p4vc_X6CLqXZE0dtkjvQqpTUiC39LsxwT2mQ
+
+response:
+
+Hello world !
+
